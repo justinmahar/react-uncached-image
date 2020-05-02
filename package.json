@@ -1,6 +1,6 @@
 {
   "name": "react-uncached-image",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Dev Boldly <devboldly@gmail.com>",
   "description": "React image component that bypasses caching using query param cache busting.",
   "homepage": "https://github.com/devboldly/react-uncached-image#readme",
