@@ -1,9 +1,6 @@
 ---
 name: Home
 route: /
-# menu: MenuName
-
-# NOTE: Menu ordering is configured in doczrc.js
 ---
 
 import { Playground } from 'docz';
@@ -16,51 +13,61 @@ import githubSvg from '../__docz__/images/github.svg';
 	alignItems: 'center',
 }}>
   <div>
-    <h1>React Library Starter</h1>
+    <h1>React Uncached Image</h1>
   </div>
   <div>
-    <a href="https://github.com/devboldly/react-library-starter" target="_blank" rel="noopener noreferrer">
+    <a href="https://github.com/devboldly/react-uncached-image" target="_blank" rel="noopener noreferrer">
       <SvgIcon src={githubSvg} size={28} style={{ margin: '0 0 0 20px' }} />
     </a>
   </div>
 </div>
 
-**This header will contain a brief description of the project.**
+**React image component that bypasses caching using query param cache busting.**
 
-👁️ **[Live Demo](/ExampleComponent#example)**
+👁️ **[Live Demo](/UncachedImage#example)**
 
 ## Overview
 
-This section will contain an overview so people can have a high-level understanding of the project.
+An [UncachedImage](/UncachedImage) adds a cache-busting query param to your image `src` to ensure the browser requests the image from the server on every render.
 
 ### Features include:
 
-- **🚀 List your features, use fun [emojis](https://emojipedia.org/search/?q=rocket)**
-  - Give a little more info on each feature or mention benefits.
+- **🐣 Fresh image every time**
+  - Ensure the image is fetched from the server on every render.
+- **🖼️ Use just like an `img`**
+  - Use all the props an `img` supports, like `src` and `alt`.
+- **🔤 Custom cache buster option**
+  - Provide your own cache buster if you'd like.
 
 ## Installation
 
 ```
-npm i @devboldly/react-library-starter
+npm i react-uncached-image
 ```
 
 ## Quick Start
 
-This section will contain a copy/paste example so people can get started quickly.
-
 ```jsx
-import { ExampleComponent } from '@devboldly/react-library-starter';
+import { UncachedImage } from 'react-uncached-image'
 ```
 
+Use just like you would a normal `img` tag in React:
+
 ```jsx
-<ExampleComponent text="Example Component"/>
+<UncachedImage src="https://loremflickr.com/320/240" />
 ```
+
+Now this image will be fetched from the server on every render.
+
+See [UncachedImage](/UncachedImage) for more information and a [live, interactive example](/UncachedImage#example).
 
 ## TypeScript
 
 Type definitions have been included for [TypeScript](https://www.typescriptlang.org/) support.
 
 ## Contributing
+
+Open source software is awesome and so are you. 😎
 
 Feel free to submit a pull request for bugs or additions, and make sure to update tests as appropriate. If you find a mistake in the docs, send a PR! Even the smallest changes help.
 
