@@ -6,7 +6,7 @@ export interface UncachedImageProps {
 }
 
 /**
- * See documentation: https://devboldly.github.io/react-uncached-image/
+ * See documentation: [UncachedImage](https://devboldly.github.io/react-uncached-image/UncachedImage)
  *
  * An UncachedImage adds a cache-busting query param to your image `src` to ensure the browser requests the image from the server on every render.
  */
