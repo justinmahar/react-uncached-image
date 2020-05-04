@@ -3,7 +3,7 @@
   "version": "1.0.5",
   "author": "DevBoldly <devboldly@gmail.com>",
   "description": "React image component that bypasses caching using query param cache busting.",
-  "homepage": "https://github.com/devboldly/react-uncached-image#readme",
+  "homepage": "https://devboldly.github.io/react-uncached-image/",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
