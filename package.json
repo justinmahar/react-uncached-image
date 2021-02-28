@@ -1,9 +1,9 @@
 {
   "name": "react-uncached-image",
   "version": "1.0.7",
-  "author": "DevBoldly <devboldly@gmail.com>",
+  "author": "Justin Mahar <contact@justinmahar.com>",
   "description": "React image component that bypasses caching using query param cache busting.",
-  "homepage": "https://devboldly.github.io/react-uncached-image/",
+  "homepage": "https://justinmahar.github.io/react-uncached-image/",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
@@ -28,10 +28,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/devboldly/react-uncached-image.git"
+    "url": "git+https://github.com/justinmahar/react-uncached-image.git"
   },
   "bugs": {
-    "url": "https://github.com/devboldly/react-uncached-image/issues"
+    "url": "https://github.com/justinmahar/react-uncached-image/issues"
   },
   "keywords": [],
   "dependencies": {},

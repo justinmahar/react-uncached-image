@@ -1,5 +1,5 @@
 <h2 align="center">
-  <a href="https://github.com/devboldly/react-uncached-image">React Uncached Image</a>
+  <a href="https://github.com/justinmahar/react-uncached-image">React Uncached Image</a>
 </h2>
 <h3 align="center">
   React image component that bypasses caching using query param cache busting.
@@ -8,23 +8,23 @@
   <a href="https://badge.fury.io/js/react-uncached-image">
     <img src="https://badge.fury.io/js/react-uncached-image.svg" alt="npm Version"/>
   </a>
-  <a href="https://github.com/devboldly/react-uncached-image/actions?query=workflow%3ATests">
-    <img src="https://github.com/devboldly/react-uncached-image/workflows/Tests/badge.svg" alt="Tests Status"/>
+  <a href="https://github.com/justinmahar/react-uncached-image/actions?query=workflow%3ATests">
+    <img src="https://github.com/justinmahar/react-uncached-image/workflows/Tests/badge.svg" alt="Tests Status"/>
   </a>
-  <a href="https://github.com/devboldly/react-uncached-image/actions?query=workflow%3ADeploy">
-    <img src="https://github.com/devboldly/react-uncached-image/workflows/Deploy/badge.svg" alt="Deploy Status"/>
+  <a href="https://github.com/justinmahar/react-uncached-image/actions?query=workflow%3ADeploy">
+    <img src="https://github.com/justinmahar/react-uncached-image/workflows/Deploy/badge.svg" alt="Deploy Status"/>
   </a>
 </p>
 
 ## Documentation
 
-Read the **[official documentation](https://devboldly.github.io/react-uncached-image/)**.
+Read the **[official documentation](https://justinmahar.github.io/react-uncached-image/)**.
 
-👁️ **[Live Demo](https://devboldly.github.io/react-uncached-image/UncachedImage#example)**
+👁️ **[Live Demo](https://justinmahar.github.io/react-uncached-image/UncachedImage#example)**
 
 ## Overview
 
-An [UncachedImage](https://devboldly.github.io/react-uncached-image/UncachedImage) adds a cache-busting query param to your image `src` to ensure the browser requests the image from the server on every render.
+An [UncachedImage](https://justinmahar.github.io/react-uncached-image/UncachedImage) adds a cache-busting query param to your image `src` to ensure the browser requests the image from the server on every render.
 
 ### Features include:
 
@@ -44,7 +44,7 @@ npm i react-uncached-image
 ## Quick Start
 
 ```jsx
-import { UncachedImage } from 'react-uncached-image'
+import { UncachedImage } from "react-uncached-image";
 ```
 
 Use just like you would a normal `img` tag in React:
@@ -55,7 +55,7 @@ Use just like you would a normal `img` tag in React:
 
 Now this image will be fetched from the server on every render.
 
-See [UncachedImage](https://devboldly.github.io/react-uncached-image/UncachedImage) for more information and a [live, interactive example](https://devboldly.github.io/react-uncached-image/UncachedImage#example).
+See [UncachedImage](https://justinmahar.github.io/react-uncached-image/UncachedImage) for more information and a [live, interactive example](https://justinmahar.github.io/react-uncached-image/UncachedImage#example).
 
 ## TypeScript
 
@@ -75,14 +75,14 @@ For major changes, open an issue first to discuss what you'd like to change.
 
 See [Kindling](https://tinyurl.com/kindlingscripts) for npm script documentation.
 
-## ⭐ Found It Helpful? [Star It!](https://github.com/devboldly/react-uncached-image/stargazers)
+## ⭐ Found It Helpful? [Star It!](https://github.com/justinmahar/react-uncached-image/stargazers)
 
-If you found this project helpful, let the community know by giving it a [star](https://github.com/devboldly/react-uncached-image/stargazers): [👉⭐](https://github.com/devboldly/react-uncached-image/stargazers)
+If you found this project helpful, let the community know by giving it a [star](https://github.com/justinmahar/react-uncached-image/stargazers): [👉⭐](https://github.com/justinmahar/react-uncached-image/stargazers)
 
 ## MIT License
 
 ```
-Copyright © 2020 DevBoldly https://devboldly.com
+Copyright © 2020 Justin Mahar https://github.com/justinmahar
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
