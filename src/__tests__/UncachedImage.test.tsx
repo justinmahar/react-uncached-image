@@ -4,7 +4,7 @@ import { UncachedImage, UncachedImageProps } from '../components/UncachedImage';
 
 function renderComponent(
   props: UncachedImageProps & React.ImgHTMLAttributes<HTMLImageElement>,
-  children: React.ReactNode = undefined
+  children: React.ReactNode = undefined,
 ): RenderResult {
   return render(<UncachedImage {...props}>{children}</UncachedImage>);
 }
