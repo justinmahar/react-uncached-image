@@ -1,6 +1,6 @@
 {
   "name": "react-uncached-image",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "author": "Justin Mahar <contact@justinmahar.com>",
   "description": "React image component that bypasses caching using query param cache busting.",
   "homepage": "https://justinmahar.github.io/react-uncached-image/",
