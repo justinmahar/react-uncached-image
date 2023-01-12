@@ -1,0 +1,72 @@
+import { Meta } from '@storybook/addon-docs';
+import { UncachedImage } from '../components/UncachedImage';
+
+<Meta title="Docs/UncachedImage" />
+
+<h1>UncachedImage</h1>
+
+## Description
+
+An UncachedImage adds a cache-busting query param to your image `src` to ensure the browser requests the image from the server on every render.
+
+## Usage
+
+```jsx
+import { UncachedImage } from 'react-uncached-image';
+```
+
+Use just like you would a normal `img` tag in React:
+
+```jsx
+<UncachedImage src="https://loremflickr.com/320/240" />
+```
+
+<UncachedImage src="https://loremflickr.com/320/240" />
+
+Pass the `src` for the image, as well as any other `img` props you'd like. The image will automatically include a query param that's used to bust the cache.
+
+The service used to get this image, [loremflickr.com](https://loremflickr.com/), returns a different image on every request. Because cache busting is being used, the image is not cached and is likely different on every render.
+
+## Props
+
+| Prop        | Type                        | Description                                                                                                                                                                                                                           |
+| ----------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| cacheBuster | `string` &#124; `undefined` | Optional. You can provide your own cache buster, which will be URI encoded and added as a query parameter. If you make this constant, cache-busting will effectively be disabled. When not specified, one is generated automatically. |
+
+This component supports **all `img` props**, such as `alt`, `className`, `style`, `ref`, and `onClick`. It renders as an `img` element.
+
+## Example
+
+The following example shows three regular `img` elements, and three `UncachedImage` components.
+
+The image source for all six images is the same: `https://loremflickr.com/320/240`. This service returns a different image on every request.
+
+The first three are likely the same, while the three uncached images will likely all be different.
+
+---
+
+<p>These three images share the same source. They've been cached by your browser and likely repeat three times.</p>
+<img src="https://loremflickr.com/320/240" />
+<img src="https://loremflickr.com/320/240" />
+<img src="https://loremflickr.com/320/240" />
+<p>
+  These use <code>{`<UncachedImage/>`}</code>, which uses client-side cache busting. They've all incurred a trip to the
+  server and are likely all different.
+</p>
+<UncachedImage src="https://loremflickr.com/320/240" />
+<UncachedImage src="https://loremflickr.com/320/240" />
+<UncachedImage src="https://loremflickr.com/320/240" />
+
+```jsx
+<p>These three images share the same source. They've been cached by your browser and likely repeat three times.</p>
+<img src="https://loremflickr.com/320/240" />
+<img src="https://loremflickr.com/320/240" />
+<img src="https://loremflickr.com/320/240" />
+<p>
+  These use <code>{`<UncachedImage/>`}</code>, which uses client-side cache busting. They've all incurred a trip to
+  the server and are likely all different.
+</p>
+<UncachedImage src="https://loremflickr.com/320/240" />
+<UncachedImage src="https://loremflickr.com/320/240" />
+<UncachedImage src="https://loremflickr.com/320/240" />
+```

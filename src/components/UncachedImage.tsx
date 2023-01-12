@@ -1,8 +1,9 @@
 import * as React from 'react';
+import { ImgProps } from 'react-html-props';
 
-export interface UncachedImageProps {
+export interface UncachedImageProps extends ImgProps {
   /** Optional. You can provide your own cache buster, which will be URI encoded and added as a query parameter. If you make this constant, cache-busting will effectively be disabled. When not specified, one is generated automatically. */
-  cacheBuster?: React.ReactText;
+  cacheBuster?: string;
 }
 
 /**
@@ -10,13 +11,10 @@ export interface UncachedImageProps {
  *
  * An UncachedImage adds a cache-busting query param to your image `src` to ensure the browser requests the image from the server on every render.
  */
-export function UncachedImage({
-  cacheBuster,
-  ...imgProps
-}: UncachedImageProps & React.ImgHTMLAttributes<HTMLImageElement>): JSX.Element {
+export function UncachedImage({ cacheBuster, ...imgProps }: UncachedImageProps): JSX.Element {
   let src = imgProps.src;
-  cacheBuster = cacheBuster ? cacheBuster : randChars(10);
   if (typeof src === 'string') {
+    cacheBuster = cacheBuster ?? randChars(10);
     const paramSymbol = src.indexOf('?') >= 0 ? '&' : '?';
     src = `${src}${paramSymbol}${encodeURIComponent(cacheBuster)}`;
   }

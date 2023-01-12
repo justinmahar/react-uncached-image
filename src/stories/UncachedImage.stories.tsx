@@ -1,18 +1,26 @@
+/*
+ * More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
+ * More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
+ * More on args: https://storybook.js.org/docs/react/writing-stories/args
+ * More on argTypes: https://storybook.js.org/docs/react/api/argtypes
+ */
 import React from 'react';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { UncachedImage } from '../components/UncachedImage';
 
-// A Storybook is a collection of stories. Each story represents a single visual state of a component.
-// Technically, a story is a function that returns something that can be rendered to screen.
-
-// The default export defines metadata that applies to the group.
 export default {
-  title: 'UncachedImage',
+  title: 'Stories/UncachedImage',
   component: UncachedImage,
-};
+  parameters: {
+    controls: {
+      disabled: true,
+    },
+    options: { showPanel: false },
+  },
+} as ComponentMeta<typeof UncachedImage>;
 
-// The named exports define the stories
-export const UncachedImageStory = () => (
-  <>
+export const CachedVsUncachedImages = () => (
+  <div>
     <p>
       Image source: <code>https://loremflickr.com/320/240</code>
     </p>
@@ -36,8 +44,8 @@ export const UncachedImageStory = () => (
     <div>
       <code>{`<UncachedImage src="https://loremflickr.com/320/240" alt="placeholder" />`}</code>
     </div>
-  </>
+  </div>
 );
-UncachedImageStory.story = {
-  name: 'UncachedImage',
+CachedVsUncachedImages.story = {
+  name: 'Cached VS Uncached',
 };

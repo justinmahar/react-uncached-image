@@ -1,1 +1,1 @@
-export * from './components/UncachedImage';
+export * from './components/Example';
