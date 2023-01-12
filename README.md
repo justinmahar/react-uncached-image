@@ -15,11 +15,11 @@
 
 Read the **[official documentation](https://justinmahar.github.io/react-uncached-image/)**.
 
-👁️ **[Live Demo](https://justinmahar.github.io/react-uncached-image/UncachedImage#example)**
+👁️ **[Live Demo](https://justinmahar.github.io/react-uncached-image/?path=/story/docs-uncachedimage--page#example)**
 
 ## Overview
 
-An [UncachedImage](https://justinmahar.github.io/react-uncached-image/UncachedImage) adds a cache-busting query param to your image `src` to ensure the browser requests the image from the server on every render.
+An [UncachedImage](https://justinmahar.github.io/react-uncached-image/?path=/story/docs-uncachedimage--page) adds a cache-busting query param to your image `src` to ensure the browser requests the image from the server on every render.
 
 ### Features include:
 
@@ -86,7 +86,7 @@ Use just like you would a normal `img` tag in React:
 
 Now this image will be fetched from the server on every render.
 
-See [UncachedImage](https://justinmahar.github.io/react-uncached-image/UncachedImage) for more information and a [live, interactive example](https://justinmahar.github.io/react-uncached-image/UncachedImage#example).
+See [UncachedImage](https://justinmahar.github.io/react-uncached-image/?path=/story/docs-uncachedimage--page) for more information and a [live, interactive example](https://justinmahar.github.io/react-uncached-image/?path=/story/docs-uncachedimage--page#example).
 
 [lock:typescript]::🚫---------------------------------------
 
