@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { value ImgProps } from 'react-html-props';
+import { ImgProps } from 'react-html-props';
 
 export interface UncachedImageProps extends ImgProps {
   /** Optional. You can provide your own cache buster, which will be URI encoded and added as a query parameter. If you make this constant, cache-busting will effectively be disabled. When not specified, one is generated automatically. */

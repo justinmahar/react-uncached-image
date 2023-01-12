@@ -1,8 +1,8 @@
 /// <reference types="react" />
 import { ImgProps } from 'react-html-props';
 export interface UncachedImageProps extends ImgProps {
-  /** Optional. You can provide your own cache buster, which will be URI encoded and added as a query parameter. If you make this constant, cache-busting will effectively be disabled. When not specified, one is generated automatically. */
-  cacheBuster?: string;
+    /** Optional. You can provide your own cache buster, which will be URI encoded and added as a query parameter. If you make this constant, cache-busting will effectively be disabled. When not specified, one is generated automatically. */
+    cacheBuster?: string;
 }
 /**
  * See documentation: [UncachedImage](https://justinmahar.github.io/react-uncached-image/?path=/story/docs-uncachedimage--page)
