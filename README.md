@@ -1,5 +1,5 @@
 <h2 align="center">
-  🔥 React Uncached Image
+  🌅 React Uncached Image
 </h2>
 <h3 align="center">
   React image component that bypasses caching using query param cache busting.
