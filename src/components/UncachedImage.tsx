@@ -7,7 +7,7 @@ export interface UncachedImageProps extends ImgProps {
 }
 
 /**
- * See documentation: [UncachedImage](https://justinmahar.github.io/react-uncached-image/?path=/story/docs-uncachedimage--page)
+ * See documentation: [UncachedImage](https://justinmahar.github.io/react-uncached-image/?path=/story/docs-uncachedimage--docs)
  *
  * An UncachedImage adds a cache-busting query param to your image `src` to ensure the browser requests the image from the server on every render.
  */
